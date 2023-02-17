@@ -19,7 +19,7 @@ const columns = [
 function App() {
   return (
     <div>
-      <h1>Using latest @fluentui/react at time of writing (v8.105.8)</h1>
+      <h1>Using latest @fluentui/react from 8/14/2022 (v8.98.2)</h1>
       <DetailsList
         items={items}
         columns={columns}/>

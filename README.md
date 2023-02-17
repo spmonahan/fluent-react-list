@@ -18,6 +18,12 @@ All `@fluentui/react` versions are pinned for consistent results. Apps are creat
 2. `yarn` (first time only to install deps)
 3. `yarn start`
 
+### Run "8.98.2" (the version currently in use)
+
+1. From repo root: `cd 8_98_2`
+2. `yarn` (first time only to install deps)
+3. `yarn start`
+
 ## Analyzing
 
 The change to rendering behavior "moved rendering up", ensure `List` content is rendered on the first React `render()` call so it can be properly focused so our analysis will start with looking at the number of calls to `render()` that happen on mount. There are a couple ways to do this but I'll focus on using the [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) Profiler as this issue is really about how React behaves so the information provided by the profiler will be helpful here.
